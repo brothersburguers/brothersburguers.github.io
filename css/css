@@ -1,0 +1,83 @@
+  .foto-perfil{
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+     }
+  
+  .textoFooter{
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-style: italic;
+  }
+
+  .card-img-top {
+    height: 70%;
+    width: 10px;
+    max-width: 10%;
+  }
+
+  .titulo{
+    font-style: normal, 'Helvica Neue', arial, sans-serif;
+    color: white !important;
+  }
+  .corInicio{
+    background-color:black;
+  }
+  .corPrimaria {
+    background-color: lightblue;
+  }
+  .corSecundaria{
+    background-color: lightgreen;
+  }
+  p{
+    font-family: Lato, 'Helvetica Neue', arial, sans-serif;
+    color:black !important;
+  }
+  .subtitulo{
+    font-family: Lato, 'Helvetica Neue', arial, sans-serif;
+    color:black !important;
+    text-transform: uppercase;
+    font-weight:bold;
+  }
+
+  .titulosBrancos{
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+  }
+  .titulosVerdes{
+    font-weight: 700;
+    color: green;
+  }
+  .jumbotron{
+    margin-bottom: 0px;
+  }
+
+  .btn-group{
+    background-color: black;
+    position: relative;
+    left: 180px;
+    top: 0 px;
+  }
+  .btn{
+    color:aliceblue;
+  }
+  .mb-0{
+    font-style: italic;
+  }
+  h4{
+  color: black;
+ font-weight: bold;
+  }
+
+  .card-img-top{
+    object-fit:cover;
+  }
+
+  .big-banner{
+    background: url('/fotos/background.jpg') no-repeat center center fixed;
+  }
+ 
+
+
