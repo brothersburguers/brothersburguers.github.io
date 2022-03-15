@@ -24,16 +24,17 @@
      }
   .fotos-produtos{
     height: 225px;
-    width: auto;
+    width: 100%;
     max-width: auto;
-    padding: auto;
-    display: block;
   }
   .btn-group{
     background-color: black;
   }
   .btn{
     color:aliceblue;
+  }
+  .mb-0{
+    font-style: italic;
   }
 </style>
 
@@ -57,11 +58,15 @@
 
     <div class="album py-5 bg-light">
       <div class="container">
+        <h2 class="text-center jumbotron-heading titulos">Hamburgueres</h2>
         <div class="row">
           <div class="col-md-6">
             <div class="card mb-4 box-shadow">
-              <img class="fotos-produtos" 
-              src="./fotos/Frangosburguer.jpeg" data-holder-rendered="true">
+              <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" src="fotos/Frangosburguer.jpeg" data-holder-rendered="true"
+                            style="height: 225px; width: 100%;max-width: 100%; display: block;">
+                        <div class="card-body">
               <div class="card-body">
                 <p class="card-text">Frangosburguer</p>
                 <div class="btn-group">
@@ -74,8 +79,11 @@
               </div>
               <div class="col-md-6">
                 <div class="card mb-4 box-shadow">
-                  <img class="fotos-produtos" 
-                  src="fotos/X Burguer.jpeg" data-holder-rendered="true">
+                  <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" src="fotos/X Burguer.jpeg" data-holder-rendered="true"
+                            style="height: 225px; width: 100%;max-width: 100%; display: block;">
+                        <div class="card-body">
                   <div class="card-body">
                     <p class="card-text">X Burguer</p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -87,40 +95,76 @@
                   </div>
                 </div>
                 </div>
+              </div>
+        </div>
+
   <!--Sobre mim-->
   <section class="jumbotron text-center">
     <div class="container">
-      <h2 class="jumbroton heading">Sobre a Brother's Burguers</h2>
+      <h2 class="jumbroton-heading">Sobre a Brother's Burguers</h2>
       <p class="lead">Começamos em..</p>
     </div>
-
-
   </section>
 
-              <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                  </ul>
-                  <ul class="nevbar-nav">
-                    <li class="nav-item"></li>
-                    <a class="nav-link" href="#">Projetos</a>
-                  </li>
-                    <li class="nav-item"></li>
-                    <a class="nav-link" href="#">Sobre mim</a>
-                  </li>
-                    <li class="nav-item"></li>
-                    <a class="nav-link" href="#">Depoimentos</a>
-                  </li>
-                    <li class="nav-item"></li>
-                    <a class="nav-link" href="#">Contatos</a>
-                  </li>
-                  </ul>
-                </div>
-              </nav>
+  <!--Depoimentos-->
+  <section class="jumbotron text-center">
+    <div class="album py-5 bg-light">
+    <div class="container">
+      <h2 class="jumbroton-heading">Depoimentos</h2>
+     </div>
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">"Muito bom esse hamburguer"</p>
+      <footer class="blockquote-footer">Camillah Wilde <cite title="Source Title">Cliente</cite></footer>
+    </blockquote>
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">"Comi 2 e comeria mais"</p>
+      <footer class="blockquote-footer">Karol <cite title="Source Title">Cliente</cite></footer>
+    </blockquote>
+    </div>
+  </section>
+
+  <!--Contatos-->
+  <section>
+    <div>
+      <div class="conteiner-fluid">
+        <h3 class="text-center">Disponivel para receber pedidos</h3>
+        <h4 class="text-center">gusburguer1998@hotmail.com</h4>
+      </div>
+    </div>
+  </section>
+
+  <!--
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="nevbar-nav">
+        <li class="nav-item"></li>
+        <a class="nav-link" href="#">Projetos</a>
+      </li>
+        <li class="nav-item"></li>
+        <a class="nav-link" href="#">Sobre mim</a>
+      </li>
+        <li class="nav-item"></li>
+        <a class="nav-link" href="#">Depoimentos</a>
+      </li>
+        <li class="nav-item"></li>
+        <a class="nav-link" href="#">Contatos</a>
+      </li>
+      </ul>
+    </div>
+  </nav>
+-->
+  <!--Footer-->
+  <footer class="text-center">
+    <p>Desenvolvido por Lucas Miranda</p>
+  </footer>
+
+
 
 </body>
 </html>
