@@ -1,3 +1,15 @@
+body {
+  display: block;
+}
+
+@media (max-width: 640px) {
+
+.c640 {
+display: none;
+}
+
+}
+
 .foto-perfil {
   height: 100%;
   width: auto;
