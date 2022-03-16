@@ -24,7 +24,7 @@ body{
     background-color:black;
   }
   .corPrimaria {
-    background-image: linear-gradient(red,yellow);;
+    background-image: linear-gradient(yellow, red);
   }
   .corSecundaria{
     background-color: green;
