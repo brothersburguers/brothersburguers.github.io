@@ -1,3 +1,7 @@
+body{
+  background-color: black;
+}
+
   .foto-perfil{
     height: 100%;
     width: auto;
@@ -9,15 +13,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
     font-style: italic;
+    text-decoration: underline;
   }
 
-  .card-img-top {
-    height: 70%;
-    width: 10px;
-    max-width: 10%;
-  }
-
-  .titulo{
+   .titulo{
     font-style: normal, 'Helvica Neue', arial, sans-serif;
     color: white !important;
   }
@@ -25,10 +24,10 @@
     background-color:black;
   }
   .corPrimaria {
-    background-color: lightblue;
+    background-image: linear-gradient(red,yellow);;
   }
   .corSecundaria{
-    background-color: lightgreen;
+    background-color: green;
   }
   p{
     font-family: Lato, 'Helvetica Neue', arial, sans-serif;
@@ -43,7 +42,6 @@
 
   .titulosBrancos{
     font-weight: 700;
-    color: white;
     text-transform: uppercase;
   }
   .titulosVerdes{
@@ -71,13 +69,8 @@
  font-weight: bold;
   }
 
+
   .card-img-top{
     object-fit:cover;
   }
-
-  .big-banner{
-    background: url('/fotos/background.jpg') no-repeat center center fixed;
-  }
- 
-
 
