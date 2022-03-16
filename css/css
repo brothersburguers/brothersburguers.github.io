@@ -1,8 +1,4 @@
-body{
-  background-color: black;
-}
-
-  .foto-perfil{
+ .foto-perfil{
     height: 100%;
     width: auto;
     max-width: 100%;
