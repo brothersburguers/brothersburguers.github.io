@@ -1,15 +1,12 @@
-@media only screen and (max-device-width: 900px) {
-  head{width: 100%;}
- }
-
  @media only screen and (max-device-width: 600px) {
-  head { width:400px; }
-  section{width:400px;}
+  head { width:auto; }
+  section{ width:auto; }
   }
 
+/*Configuração Body*/
 .foto-perfil {
-  height: 100%;
-  width: auto;
+  height: 80%;
+  width: 80%;
   max-width: 100%;
 }
 
@@ -25,14 +22,14 @@
   font-family: Arial, Helvetica, sans-serif;
   color: white !important;
   text-transform: uppercase;
-  font-size: xx-large;
+  font-size: large;
   padding-bottom: 30px;
 }
 .tituloPreto {
   font-family: Arial, Helvetica, sans-serif;
   color: black !important;
   text-transform: uppercase;
-  font-size: xx-large;
+  font-size: 100%;
   padding-bottom: 60px;
   font-weight: bold;
 }
@@ -47,43 +44,79 @@
   background-color: lightskyblue;
 }
 p {
-  font-family: Lato, "Helvetica Neue", arial, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   color: black !important;
 }
 .subtitulo {
   font-family: Arial, Helvetica, sans-serif;
   color: white !important;
+  padding-bottom: 30px;
 }
 
 .jumbotron {
   margin-bottom: 0px;
 }
 
-.btn-group {
-  background-color: red;
+h2{
+  padding-top: 30px;
+}
+
+/*Configuração botoes*/
+#pedir {
+  border-radius: none;
+  background-color: green;
   position: relative;
-  left: 100px;
+  left: 30px;
   bottom: -20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.btn {
   color: white !important;
+  margin-left: -30px;
+
 }
+
+#ingredientes{
+  background-color:gray;
+  position: relative;
+  left: 30px;
+  bottom: -20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white !important;
+  margin-left: 60px;
+  border: none;
+}
+
+#pop-up{
+  border-radius: none;
+  background-color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white !important;
+  margin-left: -30px;
+}
+
+/*Configuração Comentarios*/
 .mb-0 {
   font-style: italic;
 }
+
+/*Configuração Titulos*/
 h4 {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 20px;
   padding-bottom: 60px;
 }
 h5 {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Configuração Imagem*/
 .card-img-top {
   object-fit: cover;
 }
+
+
+
+

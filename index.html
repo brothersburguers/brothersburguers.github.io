@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"">
     <title>Brother's Burguers</title>
 
-    <!--adicionando bootstrap 4-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+<!--adicionando bootstrap 4-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"  crossorigin="anonymous"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"   crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 <!--CSS-->
 <link rel="stylesheet" href="css/cssreset.css">
 <link href="css/estilocss.css" rel="stylesheet">
-<!--<link href="smartphone.css" rel="stylesheet" media="screen and (max-width:640px)"-->
 
 
 <!--adicionando botoes fonte awesome-->
 <script src="https://kit.fontawesome.com/75963258d7.js" crossorigin="anonymous"></script>
+
+
+
 </head>
 
 <body>
   <section class="jumbotron text-center corInicio">
     <div class="container">
       <img class="foto-perfil" src="./fotos/logo.jpeg" alt="">
-        <h1 class="jumbotron-heading titulo">Brother's Burguers</h1>
+        <h3 class="jumbotron-heading titulo">Brother's Burguers</h3>
         <h5 class="subtitulo">Vendendo os melhores hamburgueres desde 2022.</h5>
-          <p> <a href="https://api.whatsapp.com/send/?phone=5512988325974&text&app_absent=0" target="_blank" class="btn btn-dark my-2">Entre em contato</a></p> </br>
+          <p> <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20fazer%20um%20pedido%20!" target="_blank" class="btn btn-dark my-2">Entre em contato</a></p> </br>
           <div class="fa-3x">
           <a href="https://www.instagram.com/broburguersofc/" target="_blank"><i class="fab fa-instagram fa-border"></i></a>
           <a href="mailto:gusburguer1998@hotmail.com" target="_blank"><i class="fa fa-envelope fa-border" ></i></a>
@@ -56,12 +54,32 @@
                 <p class="card-text">Frangosburguer</p>
                 <div class="btn-group">
                 <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20Fragosburguer%2C%20no%20capricho%20!" target="_blank" rel="noopener noreferrer" 
-                button type="button" class="btn btn-outline">Pedir</button></a>
-            </div>
-               </div>
-              </div>
-              </div>
-              </div>
+                button type="button" class="btn btn-outline" id="pedir">Pedir</button></a>
+                <button type="button" id="ingredientes"  data-toggle="modal" data-target="#exampleModal">Ingredientes</button>
+                <!-- Modal -->
+                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <h5 class="modal-title" id="exampleModalLabel" >Ingredientes:</h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                               </button>
+                   </div>
+                                 <div class="modal-body">
+                                 <p>Pão de hambúrguer, hambúrguer 120g, 200g de frango, Salada, Batata palha, Queijo, Milho e Maionese caseira.</p>
+                                 </div>
+                                 <div class="modal-footer">
+      <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20Fragosburguer%2C%20no%20capricho%20!" class="btn btn-outline" id="pop-up" target="_blank">Pedir</a>
+                           </div>
+                           </div>
+                           </div>
+                           </div>              
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
               <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
                   <img class="card-img-top"
@@ -70,11 +88,31 @@
                             style="height: 225px; width: 100%;max-width: 100%; display: block;">
                         <div class="card-body">
                   <div class="card-body">
-                    <p class="card-text">X-Burguer</p>
+                    <p class="card-text">X-Burguer</p>                   
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20X-Burguer%2C%20no%20capricho%20!" target="_blank" rel="noopener noreferrer" 
-                        button type="button" class="btn btn-outline">Pedir</button></a>
+                        button type="button" class="btn btn-outline" id="pedir">Pedir</button></a>
+                        <button type="button" id="ingredientes"  data-toggle="modal" data-target="#exampleModal">Ingredientes</button>
+                <!-- Modal -->
+                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <h5 class="modal-title" id="exampleModalLabel" >Ingredientes:</h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                               </button>
+                   </div>
+                                 <div class="modal-body">
+                                 <p>Pão de hambúrguer, hambúrguer 120g, 200g de frango,Salada,Batata palha,Milho e Maionese caseira.</p>
+                                 </div>
+                                 <div class="modal-footer">
+      <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20X-Burguer%2C%20no%20capricho%20!" class="btn btn-outline" id="pop-up" target="_blank">Pedir</a>
+                           </div>
+                           </div>
+                           </div>
+                           </div>  
                        </div>
                     </div>
                   </div>
@@ -91,9 +129,29 @@
                   <div class="card-body">
                     <p class="card-text">X-Bacon</p>
                     <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
+                      <div class="btn-group" >
                         <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20X-Bacon%2C%20no%20capricho%20!" target="_blank" rel="noopener noreferrer" 
-                        button type="button" class="btn btn-outline">Pedir</button></a>
+                        button type="button" class="btn btn-outline" id="pedir">Pedir</button></a>
+                        <button type="button" id="ingredientes"  data-toggle="modal" data-target="#exampleModal">Ingredientes</button>
+                <!-- Modal -->
+                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                   <div class="modal-dialog" role="document">
+                     <div class="modal-content">
+                       <div class="modal-header">
+                         <h5 class="modal-title" id="exampleModalLabel" >Ingredientes:</h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                               </button>
+                   </div>
+                                 <div class="modal-body">
+                                 <p>Pão de hambúrguer, hambúrguer 120g, 200g de frango,Salada,Batata palha,Milho e Maionese caseira.</p>
+                                 </div>
+                                 <div class="modal-footer">
+      <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20Fragosburguer%2C%20no%20capricho%20!" class="btn btn-outline" id="pop-up" target="_blank">Pedir</a>
+                           </div>
+                           </div>
+                           </div>
+                           </div> 
                        </div>
                     </div>
                   </div>
@@ -110,9 +168,29 @@
                   <div class="card-body">
                     <p class="card-text">X-Calabresa Duplo</p>
                     <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
+                      <div class="btn-group" >
                         <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20X-Calabresa Duplo%2C%20no%20capricho%20!" target="_blank" rel="noopener noreferrer" 
-                        button type="button" class="btn btn-outline">Pedir</button></a>
+                        button type="button" class="btn btn-outline" id="pedir">Pedir</button></a>
+                        <button type="button" id="ingredientes"  data-toggle="modal" data-target="#exampleModal">Ingredientes</button>
+                        <!-- Modal -->
+                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                             <div class="modal-content">
+                               <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel" >Ingredientes:</h5>
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">&times;</span>
+                                       </button>
+                           </div>
+                                         <div class="modal-body">
+                                         <p>Pão de hambúrguer, 2 hambúrguer 120g, 150g Calabresa, Queijo em dobro, Salada, Batata palha, Milho e Maionese caseira.</p>
+                                         </div>
+                                         <div class="modal-footer">
+              <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20Fragosburguer%2C%20no%20capricho%20!" class="btn btn-outline" id="pop-up" target="_blank">Pedir</a>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div> 
                        </div>
                     </div>
                   </div>
@@ -131,7 +209,27 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20X-Egg%2C%20no%20capricho%20!" target="_blank" rel="noopener noreferrer" 
-                        button type="button" class="btn btn-outline">Pedir</button></a>
+                        button type="button" class="btn btn-outline" id="pedir">Pedir</button></a>
+                        <button type="button" id="ingredientes"  data-toggle="modal" data-target="#exampleModal">Ingredientes</button>
+                        <!-- Modal -->
+                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                             <div class="modal-content">
+                               <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel" >Ingredientes:</h5>
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">&times;</span>
+                                       </button>
+                           </div>
+                                         <div class="modal-body">
+                                         <p>Não falou os ingredientes.</p>
+                                         </div>
+                                         <div class="modal-footer">
+              <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20Fragosburguer%2C%20no%20capricho%20!" class="btn btn-outline" id="pop-up" target="_blank">Pedir</a>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div> 
                        </div>
                     </div>
                   </div>
@@ -150,8 +248,28 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20X-Frango%2C%20no%20capricho%20!" target="_blank" rel="noopener noreferrer" 
-                        button type="button" class="btn btn-outline">Pedir</button></a>
-                       </div>
+                        button type="button" class="btn btn-outline" id="pedir">Pedir</button></a>
+                        <button type="button" id="ingredientes"  data-toggle="modal" data-target="#exampleModal">Ingredientes</button>
+                        <!-- Modal -->
+                         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                             <div class="modal-content">
+                               <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel" >Ingredientes:</h5>
+                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">&times;</span>
+                                       </button>
+                           </div>
+                                         <div class="modal-body">
+                                         <p>Pão de hambúrguer, 300g de Frango, Queijo, Salada, Batata palha.</p>
+                                         </div>
+                                         <div class="modal-footer">
+              <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20Fragosburguer%2C%20no%20capricho%20!" class="btn btn-outline" id="pop-up" target="_blank">Pedir</a>
+                                   </div>
+                                   </div>
+                                   </div>
+                                   </div> 
+                        </div>
                     </div>
                   </div>
                 </div>        
@@ -170,9 +288,9 @@
           <div class="card-body">
             <p class="card-text">Mousse de Macarujá</p>
             <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
+              <div class="btn-group" >
                 <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20pedir%20um%20Mousse%20de%20Macarujá%2C%20no%20capricho%20!" target="_blank" rel="noopener noreferrer" 
-                button type="button" class="btn btn-outline">Pedir</button></a>
+                button type="button" class="btn btn-outline" id="pedir">Pedir</button></a>
                </div>
             </div>
           </div>
