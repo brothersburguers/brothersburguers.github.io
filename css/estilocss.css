@@ -3,6 +3,12 @@
   section{ width:auto; }
   }
 
+<!-- rolagem mais suave, com o botão inicio-->
+
+html {
+  scroll-behavior: smooth;
+}
+
 /*Configuração Body*/
 .foto-perfil {
   height: 80%;
