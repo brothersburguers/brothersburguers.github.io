@@ -10,14 +10,6 @@
   max-width: 100%;
 }
 
-.textoFooter {
-  margin: 0px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-style: italic;
-  text-decoration: underline;
-}
-
 .titulo {
   font-family: Arial, Helvetica, sans-serif;
   color: white !important;
@@ -97,6 +89,9 @@ h2{
 .mb-0 {
   font-style: italic;
 }
+.blockquote-footer{
+  padding-bottom: 60px;
+}
 
 /*Configuração Titulos*/
 h4 {
@@ -122,4 +117,29 @@ h5 {
 }
 
 
+/*mapa*/
+.map-responsive{
 
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}

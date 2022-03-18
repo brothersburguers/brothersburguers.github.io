@@ -15,7 +15,7 @@
 <!--CSS-->
 <link rel="stylesheet" href="css/cssreset.css">
 <link href="css/estilocss.css" rel="stylesheet">
-
+<link href="css/footer.css" rel="stylesheet">
 
 <!--adicionando botoes fonte awesome-->
 <script src="https://kit.fontawesome.com/75963258d7.js" crossorigin="anonymous"></script>
@@ -27,7 +27,7 @@
 <body>
   <section class="jumbotron text-center corInicio">
     <div class="container">
-      <img class="foto-perfil" src="./fotos/logo.jpeg" alt="">
+      <img class="foto-perfil" src="./fotos/logo.jpeg" id="inicio" alt="">
         <h3 class="jumbotron-heading titulo">Brother's Burguers</h3>
         <h5 class="subtitulo">Vendendo os melhores hamburgueres desde 2022.</h5>
           <p> <a href="https://api.whatsapp.com/send?phone=5512988325974&text=Gostaria%20de%20fazer%20um%20pedido%20!" target="_blank" class="btn btn-dark my-2">Entre em contato</a></p> </br>
@@ -305,8 +305,8 @@
   <!--Sobre mim-->
   <section class="jumbotron text-center corPrimaria">
     <div class="container">
-      <h2 class="jumbroton-heading tituloPreto">Sobre a Brother's Burguers</h2>
-        <p class="lead">"A Brothers em Burguers, nasceu da união de amigos que sempre acreditaram que o Lanche clássico ou também "Podrão", poderia ser oferecido, 
+      <h2 class="jumbroton-heading tituloPreto" id="sobremim">Sobre a Brother's Burguers</h2>
+        <p class="lead" >"A Brothers em Burguers, nasceu da união de amigos que sempre acreditaram que o Lanche clássico ou também "Podrão", poderia ser oferecido, 
         com uma boa qualidade e dentro de um preço justo e acessível, mostrando que o clássico e simples bem feito, fazem toda a diferença!
         Com um sabor que é difícil esquecer, a ponto de precisar estar sempre pedindo outro! 
         Nosso foco é o bom atendimento ao público, com o intuito de ter a sua companhia, conosco. 
@@ -342,10 +342,43 @@
   </section>
 
   <!--Footer-->
-  <footer class="text-center corSecundaria textoFooter">
-    <a href="https://linktr.ee/lucascruz772"><font color="white">
-       Desenvolvido por Lucas Miranda</font></a>
-  </footer>
+  <div class="content">
+  </div>
+      <footer id="myFooter">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-3">
+                          <h2 class="logo"><i class="fa-solid fa-burger" id="hamburguer"></i><a href="tel:+5512988325974">Clique aqui para ligar para o Telefone diretamente: </br> (12)99618-8550 
+                      </a></h2>
+                  </div>
+                  <div class="col-sm-2">
+                      <h5>Inicio</h5>
+                      <ul>
+                          <li><a href="#inicio">Inicio</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-2">
+                      <h5>Sobre-nós</h5>
+                      <ul>
+                          <li><a href="#sobremim">Informações da Empresa</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-2">
+                      <h5>Localização</h5>
+                      <div class="map-responsive">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.7637408855014!2d-45.22654498531952!3d-22.798390299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccc3f83940c46d%3A0xdc6a15e85bb1afdd!2sR.%20Francisco%20Nunes%20Vilela%2C%20111%20-%20Vila%20dos%20Comerciarios%20I%2C%20Guaratinguet%C3%A1%20-%20SP%2C%2012509-720!5e0!3m2!1spt-BR!2sbr!4v1647603701952!5m2!1spt-BR!2sbr" 
+                      width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                     
+                      </iframe>
+                    </div>
+              </div>
+          </div>
+          <div class="footer-copyright">
+          <a href="https://linktr.ee/lucascruz772" target="_blank">© 2022 Copyright - Lucas Miranda</a>
+          </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 
