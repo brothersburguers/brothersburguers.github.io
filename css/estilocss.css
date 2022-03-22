@@ -1,19 +1,32 @@
- @media only screen and (max-device-width: 600px) {
-  head { width:auto; }
-  section{ width:auto; }
+@media only screen and (max-device-width: 600px) {
+  head {
+    width: auto;
   }
-
-<!-- rolagem mais suave, com o botão inicio-->
+  section {
+    width: auto;
+  }
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 /*Configuração Body*/
+
 .foto-perfil {
   height: 80%;
   width: 80%;
   max-width: 100%;
+}
+
+.pt-5, .py-5 {
+  padding-top: 3rem!important;
+  background: #190a2b;
+}
+
+.box-shadow{
+  border-color: #00FF00;
+  border-width: 3px;
 }
 
 .titulo {
@@ -30,19 +43,23 @@ html {
   font-size: 100%;
   padding-bottom: 60px;
   font-weight: bold;
+  text-align: center;
 }
 
 .corInicio {
-  background-color: black;
+  background-color: #190a2b;
 }
 .corPrimaria {
-  background-color: lightcoral;
+  background-color: #00FF00;
 }
-.corSecundaria {
-  background-color: lightskyblue;
+
+.mail{
+  padding-bottom: 60px;
+  color:black;
 }
+
 p {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: black !important;
 }
 .subtitulo {
@@ -55,25 +72,28 @@ p {
   margin-bottom: 0px;
 }
 
-h2{
+h2 {
   padding-top: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*Configuração botoes*/
 #pedir {
-  border-radius: none;
-  background-color: green;
+  background-color: red;
   position: relative;
   left: 30px;
   bottom: -20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white !important;
   margin-left: -30px;
+  border-radius: initial;
+  }
 
-}
-
-#ingredientes{
-  background-color:gray;
+#ingredientes {
+  background-color: gray;
   position: relative;
   left: 30px;
   bottom: -20px;
@@ -83,7 +103,7 @@ h2{
   border: none;
 }
 
-#pop-up{
+#pop-up {
   border-radius: none;
   background-color: red;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -91,11 +111,19 @@ h2{
   margin-left: -30px;
 }
 
+
+.fa-whatsapp:before {
+    content: "\f232";
+    color: #00FF00;
+}
+
+
+
 /*Configuração Comentarios*/
 .mb-0 {
   font-style: italic;
 }
-.blockquote-footer{
+.blockquote-footer {
   padding-bottom: 60px;
 }
 
@@ -118,34 +146,46 @@ h5 {
   object-fit: cover;
 }
 
-.lead{
+.lead {
   font-style: italic;
 }
 
-
 /*mapa*/
-.map-responsive{
-
-    overflow:hidden;
-
-    padding-bottom:56.25%;
-
-    position:relative;
-
-    height:0;
-
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
-.map-responsive iframe{
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
-    left:0;
+/*Hovers*/
 
-    top:0;
+#mail:hover{
+  color: blue;
+  }
 
-    height:100%;
+#pedir:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
-    width:100%;
+#ingredientes:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
-    position:absolute;
-
+.fa-border:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
